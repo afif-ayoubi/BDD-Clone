@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Open Sans", sans-serif;
   list-style: none;
   text-decoration: none;
   border: none;
@@ -16,20 +15,21 @@ header {
   display: flex;
   width: 100%;
   background: transparent;
-  padding: 27px 13%;
+  padding: 20px 11%;
   align-items: center;
   justify-content: space-between;
-  transition: all 0.5s ease;
 }
-
+.navbar {
+padding-left: 11%;
+}
 .navbar a {
   font-weight: 600;
   font-size: 13px;
-  margin: 15px 22px;
+  margin: 20px 15px;
   transition: all 0.5s ease;
 }
-.navbar a:hover {
-  color: onHoverColor;
+.navbar li a:hover {
+  color: #AEB4B8;
 }
 
 .h-right a {
@@ -37,7 +37,7 @@ header {
   font-weight: 600;
 }
 #menu-icon {
-  color: black;
+  color: white;
   cursor: pointer;
   z-index: 10001;
   font-size: 24px;
@@ -83,4 +83,92 @@ header {
   font-size: 40px;
   font-weight: 9000;
   text-transform: uppercase;
+}
+.btn{
+    background-color: #0078BE;
+    padding: 13px 30px;
+    border-radius: 20px;
+}
+
+.submenu {
+  position: absolute;
+  background-color: white;
+  width: 160px;
+  box-shadow: 0px 20px 45px #AEB4B8;
+  opacity: 0;
+  z-index: -999;
+ 
+  border-radius: 10px;
+
+}
+.submenu a{
+ 
+  color: #333333;
+}
+.submenu a:first-child {
+display: grid;  
+}
+header ul li:hover .submenu {
+  opacity: 1;
+  z-index: 99;
+  margin-top: 0px;
+}
+.submenu2 {
+  position: absolute;
+  background-color: white;
+  width: 180px;
+  box-shadow: 0px 20px 45px #AEB4B8;
+  margin-top: -px;
+  opacity: 0;
+  z-index: -999;
+  border-radius: 10px;
+}
+.submenu2 a{
+ 
+  color: #333333;
+}
+.submenu2 a:first-child {
+display: grid;  
+}
+header ul li:hover .submenu2{
+  opacity: 1;
+  z-index: 99;
+  margin-top: 0px;
+}
+.solid {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  
+}
+@media (max-width:920px){
+  header {
+    padding: 13px 5%;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.50  ease;
+
+  }
+  .navbar a {
+    display: block;
+    padding: 0;
+    margin: 0px 0px 40px 0px;
+    
+  }
+  .navbar a:hover {
+    color: #AEB4B8;
+  }
 }
