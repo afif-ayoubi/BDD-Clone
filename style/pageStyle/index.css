@@ -137,6 +137,7 @@ header ul li:hover .submenu2 {
 }
 
 .solid h2 {
+  font-weight: 800;
   padding: 50px 0px;
 }
 .card-container {
@@ -211,6 +212,42 @@ header ul li:hover .submenu2 {
   z-index: 2;
   width:560px;
   height:315px;
+}
+.join-our-community h2 {
+  font-weight: 800;
+  padding: 50px 0px;
+}
+.community-image img{
+  height: 450px;
+}
+.community-card{
+    height: 500px;
+    width: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px 15px;
+    padding: 20px;
+    background-image:url(/img/bg-icon.png) ;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 2px 4px #aeb4b8;
+}
+.community-card h3{
+  font-weight: 600;
+  font-size: 20px;
+}
+.community-card li:first-child{
+  padding-left: 20px;
+  padding-right: 50px;
+}
+.community-card  li{
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 60px;
+  color: #646464;
 }
 @media (max-width: 920px) {
   header {
